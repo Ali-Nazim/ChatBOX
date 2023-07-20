@@ -4,7 +4,7 @@ import { styled } from 'styled-components'
 const Footer = () => {
     return (
         <FooterLayout>
-           Developed by <BlueText>Nazim A.B.</BlueText> - 190723-0.1b
+           Developed by <BlueText>Nazim A.B.</BlueText> - 200723-0.1b
         </FooterLayout>
     )
 }

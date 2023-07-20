@@ -7,7 +7,6 @@ import Messages from '../components/chat/Messages'
 import ActiveUsersIndicator from '../components/chat/ActiveUsersIndicator'
 import logo from '../assets/chatbox.png'
 
-
 const ChatScreen = () => {
 
     // Hooks

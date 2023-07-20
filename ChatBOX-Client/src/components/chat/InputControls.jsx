@@ -12,7 +12,9 @@ const emitMessage = (inputRef) => {
     socket.emit('message', message)
     store.dispatch(send(message))
     inputRef.value = ""
+    inputRef.focus();
 }
+
   
 const InputControls = ({ inputRef }) => {
 
@@ -76,7 +78,7 @@ font-weight: bold;
 
 const ControlsLayout = styled.div`
 display: flex;
-position: absolute;
+position: fixed;
 
 bottom: 1rem;
 left: 0;
