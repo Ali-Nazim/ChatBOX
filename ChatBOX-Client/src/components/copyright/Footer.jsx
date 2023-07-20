@@ -11,7 +11,7 @@ const Footer = () => {
 
 const FooterLayout = styled.div`
     position: absolute;
-    bottom: .5rem;
+    bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
 

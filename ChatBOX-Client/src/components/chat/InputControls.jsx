@@ -78,7 +78,7 @@ const ControlsLayout = styled.div`
 display: flex;
 position: absolute;
 
-bottom: 0;
+bottom: 1rem;
 left: 0;
 right: 0;
 
