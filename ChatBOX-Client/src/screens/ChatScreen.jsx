@@ -94,7 +94,7 @@ const HeaderTitleLayout = styled.div`
 
 const MessagesLayout = styled.main`
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 1rem;
 
     max-height: 85vh;

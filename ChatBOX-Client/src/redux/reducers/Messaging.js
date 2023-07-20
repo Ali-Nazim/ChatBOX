@@ -12,16 +12,16 @@ export const messagingSlice = createSlice({
       state.username = action.payload
     },
     send: (state, action) => {
-      state.messages = [...state.messages, {
+      state.messages = [{
         username: state.username,
         content: action.payload
-      }]
+      }, ...state.messages]
     },
     receive: (state, action) => {
-      state.messages = [...state.messages, ...action.payload.map((notif) => ({ type: 'message', ...notif }))]
+      state.messages = [...action.payload.map((notif) => ({ type: 'message', ...notif })), ...state.messages]
     },
     receive_notification: (state, action) => {
-      state.messages = [...state.messages, ...action.payload.map((notif) => ({ type: 'notification', content: notif }))]
+      state.messages = [...action.payload.map((notif) => ({ type: 'notification', content: notif })), ...state.messages]
     },
     activeUsers: (state, action) => {
       state.activeUsers = action.payload
